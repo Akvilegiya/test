@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Заказать эдит в CapCut — Edits by You</title>
+    <style>
+        :root {
+            --bg: #0f1724;
+            --card: #0b1220;
+            --accent: #6ee7b7;
+            --muted: #9aa4b2;
+            --glass: rgba(255, 255, 255, 0.03)
+        }
+
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            margin: 0;
+            background: linear-gradient(180deg, #071024 0%, #07192a 60%);
+            color: #e6eef6;
+            -webkit-font-smoothing: antialiased
+        }
+
+        .wrap {
+            max-width: 980px;
+            margin: 36px auto;
+            padding: 24px
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 16px
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 20px
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: 1fr 360px;
+            gap: 20px;
+            margin-top: 18px
+        }
+
+        .card {
+            background: var(--card);
+            padding: 18px;
+            border-radius: 14px;
+            box-shadow: 0 6px 18px rgba(2, 6, 23, 0.6)
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 26px
+        }
+
+        p.lead {
+            color: var(--muted);
+            margin: 8px 0 14px
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px
+        }
+
+        .medal {
+            font-size: 24px
+        }
+
+        .cta {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-top: 12px
+        }
+
+        .btn {
+            background: var(--accent);
+            color: #012;
+            padding: 10px 14px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600
+        }
+
+        .btn.ghost {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            color: var(--muted)
+        }
+
+        form label {
+            display: block;
+            font-size: 13px;
+            color: var(--muted);
+            margin-top: 10px
+        }
+
+        input[type=text],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 6px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            background: var(--glass);
+            color: inherit
+        }
+
+        textarea {
+            min-height: 86px;
+            resize: vertical
+        }
+
+        .small {
+            font-size: 12px;
+            color: var(--muted)
+        }
+
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 12px
+        }
+
+        video {
+            width: 100%;
+            height: 160px;
+            border-radius: 10px;
+            background: #000;
+            object-fit: cover
+        }
+
+        footer {
+            margin-top: 18px;
+            color: var(--muted);
+            font-size: 13px;
+            text-align: center
+        }
+
+        @media(max-width:880px) {
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .videos {
+                grid-template-columns: repeat(2, 1fr)
+            }
+
+            video {
+                height: 130px
+            }
+        }
+
+        @media(max-width:520px) {
+            .videos {
+                grid-template-columns: 1fr
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>
+            <div class="logo">Edits by You</div>
+            <div style="margin-left:auto;color:var(--muted)">Качественные эдиты в CapCut • Быстро</div>
+        </header>
+
+        <section class="hero">
+            <div class="card">
+                <h1>Закажи эдит в CapCut — быстро и красиво</h1>
+                <p class="lead">Делаю эдиты уже год и имею медаль 🏅. Помогу собрать динамичный клип для
+                    ТикТок/Реелс/YouTube Shorts: монтаж, цветокоррекция, эффектные переходы.</p>
+
+                <div class="about">
+                    <div class="medal">🏅</div>
+                    <div>
+                        <div style="font-weight:600">Опыт: 1 год</div>
+                        
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <a id="tgLink" class="btn" href="https://t.me/Sharf0" target="_blank" rel="noopener">Написать в
+                        Telegram</a>
+                    <button id="orderBtn" class="btn ghost">Заказать прямо сейчас</button>
+                </div>
+
+                <hr style="margin:14px 0;border:0;border-top:1px solid rgba(255,255,255,0.03)" />
+
+                <div>
+                    <div style="font-weight:600;margin-bottom:6px">Примеры видео</div>
+
+                    <div class="videos" id="videoGallery">
+                        <video controls poster="Download.mp4">
+                            <source src="Download.mp4" type="video/mp4">
+                        </video>
+                        <video controls poster="Download(1).mp4">
+                            <source src="Download(1).mp4" type="video/mp4">
+                        </video>
+                        <video controls poster="Download(2).mp4">
+                            <source src="Download(2).mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+
+            <aside class="card">
+                <h3 style="margin-top:0">Форма заказа</h3>
+                <form id="orderForm">
+                    <label>Имя</label>
+                    <input type="text" id="name" placeholder="Ваше имя" required />
+
+                    <label>Коротко о задаче</label>
+                    <textarea id="desc"
+                        placeholder="Например: 30-секундный эдит под трек X, стиль: быстрые склейки"></textarea>
+
+                    <label>Какие исходники?</label>
+                    <select id="sourceType">
+                        <option>Клипы + фото</option>
+                        <option>Только видео</option>
+                        <option>Только фото + эффекты</option>
+                    </select>
+
+                    <div class="small" style="margin-top:8px">После отправки формы откроется чат Telegram с
+                        предзаполненным сообщением — пришлите исходники туда или скиньте ссылку на Google
+                        Drive/WeTransfer.</div>
+
+                    <button type="submit" class="btn" style="width:100%;margin-top:12px">Отправить в Telegram</button>
+                </form>
+
+                <div class="small" style="margin-top:12px">
+                    Цена: от <strong>5$</strong> (зависит от сложности). Сроки обсуждаем в чате.
+                </div>
+            </aside>
+        </section>
+
+        <footer class="card" style="margin-top:18px">
+
+        </footer>
+    </div>
+
+    <script>
+        const tgUsername = 'Akvilegiya';
+
+        const tgBtn = document.getElementById('tgLink');
+        tgBtn.href = https://t.me/Sharf0;
+
+        document.getElementById('orderBtn').addEventListener('click', () => {
+            document.getElementById('name').focus();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const name = document.getElementById('name').value.trim() || 'Без имени';
+            const desc = document.getElementById('desc').value.trim() || 'Описание не указано';
+            const srcType = document.getElementById('sourceType').value;
+
+            const msg = `Заказ эдита%0AИмя: ${name}%0AЗадача: ${desc}%0AИсходники: ${srcType}%0A%0AПожалуйста, пришлите исходники сюда или ссылку.`;
+            const tgUrl = `https://t.me/${tgUsername}?text=${msg}`;
+            window.open(tgUrl, '_blank');
+        });
+    </script>
+</body>
+
+</html>
+
+</body>
+</html>
